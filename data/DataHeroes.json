@@ -10,10 +10,10 @@
     },
     "history": "Bitten by a radioactive spider, Peter Parker uses his powers to fight crime as Spider-Man.",
     "images": [
-      "/public/imagesHeroes/captainMarvel/CaptainMarvel.png",
-      "/public/imagesHeroes/captainMarvel/CaptainMarvel1.png",
-      "/public/imagesHeroes/captainMarvel/CaptainMarvel2.png",
-      "/public/imagesHeroes/captainMarvel/CaptainMarvel3.png"
+      "/imagesHeroes/captainMarvel/CaptainMarvel.png",
+      "/imagesHeroes/captainMarvel/CaptainMarvel1.png",
+      "/imagesHeroes/captainMarvel/CaptainMarvel2.png",
+      "/imagesHeroes/captainMarvel/CaptainMarvel3.png"
     ]
   },
   {
@@ -27,10 +27,10 @@
     },
     "history": "Bitten by a radioactive spider, Peter Parker uses his powers to fight crime as Spider-Man.",
     "images": [
-      "/public/imagesHeroes/spiderMan/SpiderMan.png",
-      "/public/imagesHeroes/spiderMan/SpiderMan1.png",
-      "/public/imagesHeroes/spiderMan/SpiderMan2.png",
-      "/public/imagesHeroes/spiderMan/SpiderMan3.png"
+      "/imagesHeroes/spiderMan/SpiderMan.png",
+      "/imagesHeroes/spiderMan/SpiderMan1.png",
+      "/imagesHeroes/spiderMan/SpiderMan2.png",
+      "/imagesHeroes/spiderMan/SpiderMan3.png"
     ]
   },
   {
@@ -44,10 +44,10 @@
     },
     "history": "A warrior princess of the Amazons, Diana left her home to become Wonder Woman and fight for justice.",
     "images": [
-      "/public/imagesHeroes/wonderWoman/WonderWoman.png",
-      "/public/imagesHeroes/wonderWoman/WonderWoman1.png",
-      "/public/imagesHeroes/wonderWoman/WonderWoman2.png",
-      "/public/imagesHeroes/wonderWoman/WonderWoman3.png"
+      "/imagesHeroes/wonderWoman/WonderWoman.png",
+      "/imagesHeroes/wonderWoman/WonderWoman1.png",
+      "/imagesHeroes/wonderWoman/WonderWoman2.png",
+      "/imagesHeroes/wonderWoman/WonderWoman3.png"
     ]
   },
   {
@@ -61,10 +61,10 @@
     },
     "history": "After witnessing the murder of his parents, Bruce Wayne became Batman, vowing to fight crime in Gotham City.",
     "images": [
-      "/public/imagesHeroes/batman/BatMan.png",
-      "/public/imagesHeroes/batman/BatMan1.png",
-      "/public/imagesHeroes/batman/BatMan2.png",
-      "/public/imagesHeroes/batman/BatMan3.png"
+      "/imagesHeroes/batman/BatMan.png",
+      "/imagesHeroes/batman/BatMan1.png",
+      "/imagesHeroes/batman/BatMan2.png",
+      "/imagesHeroes/batman/BatMan3.png"
     ]
   },
   {
@@ -78,10 +78,10 @@
     },
     "history": "The last son of Krypton, Superman was sent to Earth where he uses his powers to protect humanity.",
     "images": [
-      "/public/imagesHeroes/superman/SuperMan.png",
-      "/public/imagesHeroes/superman/SuperMan1.png",
-      "/public/imagesHeroes/superman/SuperMan2.png",
-      "/public/imagesHeroes/superman/SuperMan3.png"
+      "/imagesHeroes/superman/SuperMan.png",
+      "/imagesHeroes/superman/SuperMan1.png",
+      "/imagesHeroes/superman/SuperMan2.png",
+      "/imagesHeroes/superman/SuperMan3.png"
     ]
   },
   {
@@ -95,10 +95,10 @@
     },
     "history": "Trained as a spy and assassin in the Red Room, Natasha Romanoff became the Black Widow, an agent of S.H.I.E.L.D. and a member of the Avengers.",
     "images": [
-      "/public/imagesHeroes/blackWidow/BlackWidow.png",
-      "/public/imagesHeroes/blackWidow/BlackWidow1.png",
-      "/public/imagesHeroes/blackWidow/BlackWidow2.png",
-      "/public/imagesHeroes/blackWidow/BlackWidow3.png"
+      "/imagesHeroes/blackWidow/BlackWidow.png",
+      "/imagesHeroes/blackWidow/BlackWidow1.png",
+      "/imagesHeroes/blackWidow/BlackWidow2.png",
+      "/imagesHeroes/blackWidow/BlackWidow3.png"
     ]
   },
   {
@@ -112,10 +112,10 @@
     },
     "history": "Gained his super-speed abilities from a freak chemical lab accident, Barry Allen uses his powers to fight crime as the Flash.",
     "images": [
-      "/public/imagesHeroes/flash/Flash.png",
-      "/public/imagesHeroes/flash/Flash1.png",
-      "/public/imagesHeroes/flash/Flash2.png",
-      "/public/imagesHeroes/flash/Flash3.png"
+      "/imagesHeroes/flash/Flash.png",
+      "/imagesHeroes/flash/Flash1.png",
+      "/imagesHeroes/flash/Flash2.png",
+      "/imagesHeroes/flash/Flash3.png"
     ]
   },
   {
@@ -129,10 +129,10 @@
     },
     "history": "Billionaire inventor Tony Stark created the Iron Man suit to save his life and uses it to protect the world as a technology-powered hero.",
     "images": [
-      "/public/imagesHeroes/ironMan/IronMan.png",
-      "/public/imagesHeroes/ironMan/IronMan1.png",
-      "/public/imagesHeroes/ironMan/IronMan2.png",
-      "/public/imagesHeroes/ironMan/IronMan3.png"
+      "/imagesHeroes/ironMan/IronMan.png",
+      "/imagesHeroes/ironMan/IronMan1.png",
+      "/imagesHeroes/ironMan/IronMan2.png",
+      "/imagesHeroes/ironMan/IronMan3.png"
     ]
   },
   {
@@ -146,10 +146,10 @@
     },
     "history": "After exposure to gamma radiation, scientist Bruce Banner transforms into the Hulk, a green behemoth, when he is angry or stressed.",
     "images": [
-      "/public/imagesHeroes/hulk/Hulk.png",
-      "/public/imagesHeroes/hulk/Hulk1.png",
-      "/public/imagesHeroes/hulk/Hulk2.png",
-      "/public/imagesHeroes/hulk/Hulk3.png"
+      "/imagesHeroes/hulk/Hulk.png",
+      "/imagesHeroes/hulk/Hulk1.png",
+      "/imagesHeroes/hulk/Hulk2.png",
+      "/imagesHeroes/hulk/Hulk3.png"
     ]
   },
   {
@@ -163,10 +163,10 @@
     },
     "history": "The Norse God of Thunder, Thor wields the magical hammer Mjolnir and is a founding member of the Avengers.",
     "images": [
-      "/public/imagesHeroes/thor/Thor.png",
-      "/public/imagesHeroes/thor/Thor1.png",
-      "/public/imagesHeroes/thor/Thor2.png",
-      "/public/imagesHeroes/thor/Thor3.png"
+      "/imagesHeroes/thor/Thor.png",
+      "/imagesHeroes/thor/Thor1.png",
+      "/imagesHeroes/thor/Thor2.png",
+      "/imagesHeroes/thor/Thor3.png"
     ]
   },
   {
@@ -180,10 +180,10 @@
     },
     "history": "Chosen by the ring for his ability to overcome great fear, Hal Jordan is a member of the intergalactic Green Lantern Corps.",
     "images": [
-      "/public/imagesHeroes/greenLantern/GreenLantern.png",
-      "/public/imagesHeroes/greenLantern/GreenLantern1.png",
-      "/public/imagesHeroes/greenLantern/GreenLantern2.png",
-      "/public/imagesHeroes/greenLantern/GreenLantern3.png"
+      "/imagesHeroes/greenLantern/GreenLantern.png",
+      "/imagesHeroes/greenLantern/GreenLantern1.png",
+      "/imagesHeroes/greenLantern/GreenLantern2.png",
+      "/imagesHeroes/greenLantern/GreenLantern3.png"
     ]
   },
   {
@@ -197,10 +197,10 @@
     },
     "history": "Arthur Curry, the heir to the underwater kingdom of Atlantis, uses his abilities to communicate with sea life and his superhuman strength to protect both the world's oceans and the surface.",
     "images": [
-      "/public/imagesHeroes/aquaman/Aquaman.png",
-      "/public/imagesHeroes/aquaman/Aquaman1.png",
-      "/public/imagesHeroes/aquaman/Aquaman2.png",
-      "/public/imagesHeroes/aquaman/Aquaman3.png"
+      "/imagesHeroes/aquaman/Aquaman.png",
+      "/imagesHeroes/aquaman/Aquaman1.png",
+      "/imagesHeroes/aquaman/Aquaman2.png",
+      "/imagesHeroes/aquaman/Aquaman3.png"
     ]
   },
   {
@@ -214,10 +214,10 @@
     },
     "history": "Former neurosurgeon Doctor Stephen Strange becomes the Sorcerer Supreme and uses his magic to protect the world from mystical threats.",
     "images": [
-      "/public/imagesHeroes/doctorStrange/DoctorStrange.png",
-      "/public/imagesHeroes/doctorStrange/DoctorStrange1.png",
-      "/public/imagesHeroes/doctorStrange/DoctorStrange2.png",
-      "/public/imagesHeroes/doctorStrange/DoctorStrange3.png"
+      "/imagesHeroes/doctorStrange/DoctorStrange.png",
+      "/imagesHeroes/doctorStrange/DoctorStrange1.png",
+      "/imagesHeroes/doctorStrange/DoctorStrange2.png",
+      "/imagesHeroes/doctorStrange/DoctorStrange3.png"
     ]
   },
   {
@@ -231,10 +231,10 @@
     },
     "history": "T'Challa is the king of the advanced African nation of Wakanda and the powerful warrior known as the Black Panther.",
     "images": [
-      "/public/imagesHeroes/blackPanther/BlackPanther.png",
-      "/public/imagesHeroes/blackPanther/BlackPanther1.png",
-      "/public/imagesHeroes/blackPanther/BlackPanther2.png",
-      "/public/imagesHeroes/blackPanther/BlackPanther3.png"
+      "/imagesHeroes/blackPanther/BlackPanther.png",
+      "/imagesHeroes/blackPanther/BlackPanther1.png",
+      "/imagesHeroes/blackPanther/BlackPanther2.png",
+      "/imagesHeroes/blackPanther/BlackPanther3.png"
     ]
   },
   {
@@ -248,10 +248,10 @@
     },
     "history": "Steve Rogers was transformed into the super-soldier Captain America during World War II and has been fighting for freedom ever since.",
     "images": [
-      "/public/imagesHeroes/captainAmerica/CaptainAmerica.png",
-      "/public/imagesHeroes/captainAmerica/CaptainAmerica1.png",
-      "/public/imagesHeroes/captainAmerica/CaptainAmerica2.png",
-      "/public/imagesHeroes/captainAmerica/CaptainAmerica3.png"
+      "/imagesHeroes/captainAmerica/CaptainAmerica.png",
+      "/imagesHeroes/captainAmerica/CaptainAmerica1.png",
+      "/imagesHeroes/captainAmerica/CaptainAmerica2.png",
+      "/imagesHeroes/captainAmerica/CaptainAmerica3.png"
     ]
   },
   {
@@ -265,10 +265,10 @@
     },
     "history": "Scott Summers, with his ability to emit powerful beams of energy from his eyes, is a founding member of the X-Men.",
     "images": [
-      "/public/imagesHeroes/cyclops/Cyclops.png",
-      "/public/imagesHeroes/cyclops/Cyclops1.png",
-      "/public/imagesHeroes/cyclops/Cyclops2.png",
-      "/public/imagesHeroes/cyclops/Cyclops3.png"
+      "/imagesHeroes/cyclops/Cyclops.png",
+      "/imagesHeroes/cyclops/Cyclops1.png",
+      "/imagesHeroes/cyclops/Cyclops2.png",
+      "/imagesHeroes/cyclops/Cyclops3.png"
     ]
   },
   {
@@ -282,10 +282,10 @@
     },
     "history": "With his healing factor, adamantium skeleton, and retractable claws, Logan battles as Wolverine in the X-Men and various other teams and missions.",
     "images": [
-      "/public/imagesHeroes/wolverine/Wolverine.png",
-      "/public/imagesHeroes/wolverine/Wolverine1.png",
-      "/public/imagesHeroes/wolverine/Wolverine2.png",
-      "/public/imagesHeroes/wolverine/Wolverine3.png"
+      "/imagesHeroes/wolverine/Wolverine.png",
+      "/imagesHeroes/wolverine/Wolverine1.png",
+      "/imagesHeroes/wolverine/Wolverine2.png",
+      "/imagesHeroes/wolverine/Wolverine3.png"
     ]
   },
   {
@@ -299,10 +299,10 @@
     },
     "history": "Jean Grey becomes the host for the Phoenix Force, a powerful cosmic entity, which amplifies her telepathic and telekinetic powers to god-like levels.",
     "images": [
-      "/public/imagesHeroes/phoenix/Phoenix.png",
-      "/public/imagesHeroes/phoenix/Phoenix1.png",
-      "/public/imagesHeroes/phoenix/Phoenix2.png",
-      "/public/imagesHeroes/phoenix/Phoenix3.png"
+      "/imagesHeroes/phoenix/Phoenix.png",
+      "/imagesHeroes/phoenix/Phoenix1.png",
+      "/imagesHeroes/phoenix/Phoenix2.png",
+      "/imagesHeroes/phoenix/Phoenix3.png"
     ]
   },
   {
@@ -316,10 +316,10 @@
     },
     "history": "Remy LeBeau, or Gambit, possesses the mutant ability to charge objects, particularly playing cards, with explosive kinetic energy.",
     "images": [
-      "/public/imagesHeroes/gambit/Gambit.png",
-      "/public/imagesHeroes/gambit/Gambit1.png",
-      "/public/imagesHeroes/gambit/Gambit2.png",
-      "/public/imagesHeroes/gambit/Gambit3.png"
+      "/imagesHeroes/gambit/Gambit.png",
+      "/imagesHeroes/gambit/Gambit1.png",
+      "/imagesHeroes/gambit/Gambit2.png",
+      "/imagesHeroes/gambit/Gambit3.png"
     ]
   },
   {
@@ -333,10 +333,10 @@
     },
     "history": "Rogue has the mutant ability to absorb the powers, memories, and life force of others through touch, a power she struggles to control.",
     "images": [
-      "/public/imagesHeroes/rogue/Rogue.png",
-      "/public/imagesHeroes/rogue/Rogue1.png",
-      "/public/imagesHeroes/rogue/Rogue2.png",
-      "/public/imagesHeroes/rogue/Rogue3.png"
+      "/imagesHeroes/rogue/Rogue.png",
+      "/imagesHeroes/rogue/Rogue1.png",
+      "/imagesHeroes/rogue/Rogue2.png",
+      "/imagesHeroes/rogue/Rogue3.png"
     ]
   }
 ]
