@@ -1,0 +1,18 @@
+.card-detail-hero {
+  height: 765px;
+}
+
+.img-card-detail-hero {
+  width: 700px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .card-detail-hero {
+    height: 100%;
+  }
+}
