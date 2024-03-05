@@ -1,7 +1,6 @@
-import { IonButton, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCol, IonGrid, IonRow } from "@ionic/react";
+import { IonButton, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonCol, IonGrid, IonRow } from "@ionic/react";
 import { HeroesService } from "../../api/HeroesService";
 import { Hero } from "../../interfaces/HeroInterface";
-import "../../styles/ListOfHeroes.css";
 
 export function ListOfHeroes() {
     // Create a new instance of the HeroesService class
@@ -13,7 +12,7 @@ export function ListOfHeroes() {
         <IonGrid>
             <IonRow>
                 {heroes.map((hero: Hero) => (
-                    <IonCol size="6" sizeMd="4" sizeLg="3" key={hero.id}>
+                    <IonCol size="12" sizeMd="4" sizeLg="3" key={hero.id}>
                         <IonCard className="card-list-of-heroes">
                             <img alt={`${hero.name}`} src={hero.images[0]} />
                             <IonCardHeader>
