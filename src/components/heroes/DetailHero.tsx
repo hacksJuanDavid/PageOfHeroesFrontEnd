@@ -14,7 +14,7 @@ export function DetailHero() {
 
     return (
         <div>
-            <IonCard className="card-detail-hero">
+            <IonCard className="ion-padding">
                 <IonGrid>
                     <IonRow>
                         <IonCol size="12" sizeMd="6">

@@ -1,16 +1,16 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from "@ionic/react";
-import { DetailHero } from "../components/heroes/DetailHero";
+import { GalleryHero } from "../../components/heroes/GalleryHero";
 
-export default function ViewDetailsHero() {
+export default function ViewGalleryHero() {
     return (
         <IonPage>
             <IonHeader>
                 <IonToolbar>
-                    <IonTitle>View Detail Hero</IonTitle>
+                    <IonTitle>View Gallery Hero</IonTitle>
                 </IonToolbar>
             </IonHeader>
             <IonContent fullscreen>
-                <DetailHero />
+                <GalleryHero />
             </IonContent>
         </IonPage>
     )

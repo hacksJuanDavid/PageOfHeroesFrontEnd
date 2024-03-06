@@ -11,9 +11,9 @@ import {
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { ellipse, square, triangle } from 'ionicons/icons';
-import Heroes from './pages/Heroes';
-import Home from './pages/Home';
-import Search from './pages/Search';
+import Heroes from './pages/heroes/Heroes';
+import Home from './pages/home/Home';
+import Search from './pages/search/Search';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -33,8 +33,8 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
-import ViewDetailsHero from './pages/ViewDetailsHero';
-import ViewGalleryHero from './pages/ViewGalleryHero';
+import ViewDetailsHero from './pages/heroes/ViewDetailsHero';
+import ViewGalleryHero from './pages/heroes/ViewGalleryHero';
 
 setupIonicReact();
 

@@ -1,4 +1,5 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { SearchHero } from '../../components/heroes/SearchHero';
 
 export default function Search() {
   return (
@@ -14,6 +15,7 @@ export default function Search() {
             <IonTitle size="large">Search</IonTitle>
           </IonToolbar>
         </IonHeader>
+        <SearchHero />
       </IonContent>
     </IonPage>
   );
