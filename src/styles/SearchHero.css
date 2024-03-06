@@ -1,0 +1,10 @@
+.search-button-hero {
+  margin-top: 27px;
+}
+
+/* Media querie*/
+@media (max-width: 768px) {
+  .search-button-hero {
+    margin-top: 0;
+  }
+}
