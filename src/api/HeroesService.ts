@@ -15,8 +15,11 @@ export class HeroesService {
     }
 
     // Method to get a hero by name
-    public getHeroByName(name: string): Hero {
-        return DataHeroesJSON.find(hero => hero.name === name) as Hero;
+    public getHeroBySearchName(searchName: string): Hero[] {
+        const findHero = DataHeroesJSON.filter(hero => hero.name.toLowerCase().includes(searchName.toLowerCase()));
+        
+        // Parse the result
+        return findHero;
     }
 }
 
