@@ -2,7 +2,8 @@ import { IonButton, IonCard, IonCardContent, IonCardHeader, IonCol, IonGrid, Ion
 import { HeroesService } from "../../api/HeroesService";
 import "../../styles/DetailHero.css";
 
-export function DetailHero() {
+// Function to get hero by id
+function getHeroById() {
     // Create a new instance of the HeroesService class
     const heroesService = new HeroesService();
 
@@ -11,6 +12,13 @@ export function DetailHero() {
 
     // Get the hero by id
     const hero = heroesService.getHeroById(id);
+    // Return the hero
+    return hero;
+}
+
+export function DetailHero() {
+    // Get the hero
+    const hero = getHeroById();
 
     return (
         <div>

@@ -2,11 +2,19 @@ import { IonButton, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonCol
 import { HeroesService } from "../../api/HeroesService";
 import { Hero } from "../../interfaces/HeroInterface";
 
-export function ListOfHeroes() {
+// Function to get all the heroes
+function getHeroes() {
     // Create a new instance of the HeroesService class
     const heroesService = new HeroesService();
     // Get all the heroes
     const heroes = heroesService.getHeroes();
+    // Return the heroes
+    return heroes;
+}
+
+export function ListOfHeroes() {
+    // Get all the heroes
+    const heroes = getHeroes();
 
     return (
         <IonGrid>

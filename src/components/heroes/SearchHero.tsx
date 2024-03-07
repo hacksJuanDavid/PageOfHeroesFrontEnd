@@ -6,30 +6,33 @@ import { search } from "ionicons/icons";
 import "../../styles/SearchHero.css";
 
 export function SearchHero() {
-    // Service to manage the heroes
-    const heroesService = new HeroesService();
-
     // State for the search bar and Hero
-    const [searchName, setSearchName] = useState('');
+    const [searchName, setSearchName] = useState<string>("");
     const [hero, setHero] = useState<[]>() as Hero[] | any;
 
     // Function get the search text
-    const handleSearch = (e: any) => {
+    function handleSearch(e: any) {
         // Set the search text
         setSearchName(e.detail.value);
     }
 
     // Function to search the hero
-    const searchHero = () => {
+    function searchHero() {
+        // Service to manage the heroes
+        const heroesService = new HeroesService();
+
         // Get the hero by name
         const findHero = heroesService.getHeroBySearchName(searchName);
 
-        // Set the hero
-        setHero(findHero);
-
+        // If the hero is not found or the search is empty
+        if (findHero.length === 0 || searchName === "") {
+            setHero(null);
+            return;
+        } else {
+            // Set the hero
+            setHero(findHero);
+        }
     }
-
-    console.log(hero);
 
     return (
         <div>

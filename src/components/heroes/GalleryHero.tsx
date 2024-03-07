@@ -1,7 +1,8 @@
 import { IonButton, IonCard, IonCol, IonGrid, IonRow } from "@ionic/react";
 import { HeroesService } from "../../api/HeroesService";
 
-export function GalleryHero() {
+// Function to get hero by id
+function getHeroById() {
     // Create a new instance of the HeroesService class
     const heroesService = new HeroesService();
 
@@ -10,6 +11,13 @@ export function GalleryHero() {
 
     // Get the hero by id
     const hero = heroesService.getHeroById(id);
+    // Return the hero
+    return hero;
+}
+
+export function GalleryHero() {
+    // Get the hero
+    const hero = getHeroById();
 
     return (
         <div>
