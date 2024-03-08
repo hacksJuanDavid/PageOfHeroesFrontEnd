@@ -1,16 +1,18 @@
-import { IonCard, IonCardContent, IonCardHeader } from "@ionic/react";
+import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonGrid, IonRow } from "@ionic/react";
+import "../../styles/TopHome.css";
 
 export function TopHome() {
     return (
         <div>
-            <IonCard>
-                <IonCardHeader>
-                    <h1>Exploradores de lo Extraordinario</h1>
-                </IonCardHeader>
-                <IonCardContent>
-                    
-                </IonCardContent>
-            </IonCard>
+            <>
+                {/* Hero home */}
+                <IonCard className="card-top-home ion-padding">
+                    <IonCardHeader>
+                        <IonCardTitle className="card-top-title-home ion-text-center">Heros of universe</IonCardTitle>
+                    </IonCardHeader>
+                    {/* Add more content or components for your hero section */}
+                </IonCard>
+            </>
         </div>
     )
 }

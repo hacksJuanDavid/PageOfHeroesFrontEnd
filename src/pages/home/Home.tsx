@@ -2,6 +2,7 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/rea
 import { TopHome } from '../../components/home/TopHome';
 import { MidHome } from '../../components/home/MidHome';
 import { DownHome } from '../../components/home/DownHome';
+import { Footer } from '../../components/commons/Footer';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <TopHome />
         <MidHome />
         <DownHome />
+        <Footer />
       </IonContent>
     </IonPage>
   );

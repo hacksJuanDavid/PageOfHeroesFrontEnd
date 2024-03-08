@@ -107,7 +107,14 @@ export function SearchHero() {
                         </div>
                     )) :
                         <div>
-                            <h1>Hero not found</h1>
+                            <IonCard className="ion-margin" color="danger">
+                                <IonCardHeader>
+                                    <h1 className="ion-text-center">Hero not found</h1>
+                                </IonCardHeader>
+                                <IonCardContent>
+                                    <p className="ion-text-center">Sorry, we couldn't find the hero you were looking for.</p>
+                                </IonCardContent>
+                            </IonCard>
                         </div>
                     }
                 </IonCardContent>
