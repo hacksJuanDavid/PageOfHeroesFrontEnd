@@ -10,7 +10,7 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { ellipse, square, triangle } from 'ionicons/icons';
+import { planetOutline, searchOutline, readerOutline } from 'ionicons/icons';
 import Heroes from './pages/heroes/Heroes';
 import Home from './pages/home/Home';
 import Search from './pages/search/Search';
@@ -65,15 +65,15 @@ export default function App() {
           </IonRouterOutlet>
           <IonTabBar slot="bottom">
             <IonTabButton tab="heroes" href="/heroes">
-              <IonIcon aria-hidden="true" icon={triangle} />
+              <IonIcon aria-hidden="true" icon={planetOutline} />
               <IonLabel>Page Heroes</IonLabel>
             </IonTabButton>
             <IonTabButton tab="home" href="/home">
-              <IonIcon aria-hidden="true" icon={ellipse} />
+              <IonIcon aria-hidden="true" icon={readerOutline} />
               <IonLabel>Home</IonLabel>
             </IonTabButton>
             <IonTabButton tab="search" href="/search">
-              <IonIcon aria-hidden="true" icon={square} />
+              <IonIcon aria-hidden="true" icon={searchOutline} />
               <IonLabel>Search Hero</IonLabel>
             </IonTabButton>
           </IonTabBar>
