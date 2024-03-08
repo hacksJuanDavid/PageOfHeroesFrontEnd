@@ -1,0 +1,50 @@
+/** Top Home **/
+.card-top-home {
+    height: 600px;
+    background-image: url(/home/heroesBackground.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 100% 50%;
+  }
+  
+  .card-top-title-home {
+    text-shadow: 2px 2px #323632;
+    font-size: 7rem;
+    font-weight: 700px;
+    animation: colorChange 4s infinite; /* 4s es la duración, y 'infinite' hace que la animación se repita indefinidamente */
+  }
+  
+  @keyframes colorChange {
+    0% {
+      color: #113545;
+    } /* Rojo */
+    25% {
+      color: #ffffff;
+    } /* Verde */
+    50% {
+      color: #000000;
+    } /* Azul */
+    75% {
+      color: #ff0000;
+    } /* Magenta */
+    100% {
+      color: #716c0061;
+    } /* Amarillo */
+  }
+  /** End Hero Home **/
+  
+  /* Media queries */
+  @media screen and (max-width: 768px) {
+    .card-top-home {
+      height: 50%;
+    }
+    .card-top-title-home {
+      font-size: 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 375px){
+    .card-top-title-home {
+      font-size: 1.5rem;
+    }
+  }
