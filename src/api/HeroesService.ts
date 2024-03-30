@@ -1,45 +1,67 @@
 // import data with the heroes from the json file
-import DataHeroesJSON from "../../data/DataHeroes.json";
 import { Hero } from "../interfaces/HeroInterface";
 
 // Class to manage the heroes
 export class HeroesService {
     // Data with the heroes
-    private dataHero = DataHeroesJSON;
-
+    private HeroApiUrl = "https://heroapi-h0cv.onrender.com/api/v1";
 
     // Constructor
     constructor() {
-        this.dataHero = DataHeroesJSON;
     }
 
     // Method to get all the heroes
-    public getHeroes(): Hero[] {
-        return this.dataHero;
+    public async getHeroes(): Promise<Hero[]> {
+        try {
+            const response = await fetch(`${this.HeroApiUrl}/heroes`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+            const data = await response.json();
+            return data;
+        }
+        catch (error) {
+            console.log(error);
+            return [];
+        }
     }
 
     // Method to get a hero by id
-    public getHeroById(id: number): Hero {
-        return this.dataHero.find(hero => hero.id === id) as Hero;
+    public async getHeroById(id: string): Promise<Hero> {
+        try {
+            const response = await fetch(`${this.HeroApiUrl}/heroes/${id}`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+            const data = await response.json();
+            return data;
+        }
+        catch (error) {
+            console.log(error);
+            throw error;
+        }
     }
 
     // Method to get a hero by name
-    public getHeroBySearchName(searchName: string): Hero[] {
-        // Normalize the search name
-        const searchNameNormalized = searchName.trim().toLowerCase().replace(/[\s\-_]+/g, '');
-
-        // Filter the heroes
-        const foundHero = this.dataHero.filter(hero => {
-            // Normalize the hero name
-            const heroNameNormalized = hero.name.trim().toLowerCase().replace(/[\s\-_]+/g, '');
-
-            // Return the hero if the name contains the search name
-            return heroNameNormalized.includes(searchNameNormalized);
+    public async getHeroBySearchName(searchName: string): Promise<Hero[]> {
+        try {
+            const response = await fetch(`${this.HeroApiUrl}/heroes/name/${searchName}`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+            const data = await response.json();
+            return data;
         }
-        );
-
-        // Return the hero
-        return foundHero;
+        catch (error) {
+            console.log(error);
+            return [];
+        }
     }
 }
 
