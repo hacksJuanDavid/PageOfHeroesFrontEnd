@@ -1,8 +1,8 @@
 // Interface for Heroe
 export interface Hero {
-    id: number;
+    id: string;
     name: string;
-    powers: string[];
+    power: string[];
     characteristics: {
         gender: string;
         origin: string;
