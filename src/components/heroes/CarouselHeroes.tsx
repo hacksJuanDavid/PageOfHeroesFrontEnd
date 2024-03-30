@@ -2,6 +2,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { IonCard, IonImg } from '@ionic/react';
 import { Pagination } from 'swiper/modules';
 import { HeroesService } from '../../api/HeroesService';
+import { useState, useEffect } from 'react';
+import { Hero } from '../../interfaces/HeroInterface';
 import 'swiper/css';
 import 'swiper/css/grid';
 import 'swiper/css/pagination';
@@ -18,6 +20,18 @@ function getHeroes() {
 }
 
 export function CarouselHeroes() {
+    // State to store the heroes
+    const [heroes, setHeroes] = useState<Hero[]>([]);
+
+    useEffect(() => {
+        const fetchHeroes = async () => {
+            const fetchedHeroes = await getHeroes();
+            setHeroes(fetchedHeroes);
+        };
+
+        fetchHeroes();
+    }, []);
+
     return (
         <>
             <IonCard className="ion-padding card-carousel-hero">
@@ -49,7 +63,7 @@ export function CarouselHeroes() {
                     }}
                     modules={[Pagination]}
                 >
-                    {getHeroes().map((hero) => (
+                    {heroes && heroes.length > 0 && heroes.map((hero) => (
                         <SwiperSlide key={hero.id}>
                             <IonImg src={hero.images[0]} alt={hero.name} />
                         </SwiperSlide>

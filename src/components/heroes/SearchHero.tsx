@@ -17,12 +17,11 @@ export function SearchHero() {
     }
 
     // Function to search the hero
-    function searchHero() {
-        // Service to manage the heroes
+    async function searchHero() {
         const heroesService = new HeroesService();
 
         // Get the hero by name
-        const findHero = heroesService.getHeroBySearchName(searchName);
+        const findHero = await heroesService.getHeroBySearchName(searchName);
 
         // If the hero is not found or the search is empty
         if (findHero.length === 0 || searchName === "") {
@@ -83,7 +82,7 @@ export function SearchHero() {
                                                 <p>{hero.history}</p>
                                                 <h1>Powers</h1>
                                                 <ul>
-                                                    {hero.powers.map((power, index) => (
+                                                    {hero.power.map((power, index) => (
                                                         <li key={index}>{power}</li>
                                                     ))}
                                                 </ul>

@@ -1,7 +1,9 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { IonCard, IonImg } from '@ionic/react';
+import { IonCard } from '@ionic/react';
 import { Pagination } from 'swiper/modules';
 import { HeroesService } from '../../api/HeroesService';
+import { useEffect, useState } from 'react';
+import { Hero } from '../../interfaces/HeroInterface';
 import 'swiper/css';
 import 'swiper/css/grid';
 import 'swiper/css/pagination';
@@ -18,6 +20,19 @@ function getHeroes() {
 }
 
 export function CarouselHistoriesHeroes() {
+    // State to store the heroes
+    const [heroes, setHeroes] = useState<Hero[]>([]);
+
+    // UseEffect to fetch the heroes
+    useEffect(() => {
+        const fetchHeroes = async () => {
+            const fetchedHeroes = await getHeroes();
+            setHeroes(fetchedHeroes);
+        };
+
+        fetchHeroes();
+    }, []);
+
     return (
         <>
             <IonCard className="ion-padding card-carousel-histories-heroes">
@@ -49,7 +64,7 @@ export function CarouselHistoriesHeroes() {
                     }}
                     modules={[Pagination]}
                 >
-                    {getHeroes().map((hero) => (
+                    {heroes.map((hero) => (
                         <SwiperSlide key={hero.id}>
                             <IonCard className="slide-card-histories-heroes" color="warning">
                                 <h1 className="ion-text-center ion-padding">{hero.name}</h1>

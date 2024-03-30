@@ -2,6 +2,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { IonCard, IonCardHeader } from '@ionic/react';
 import { Pagination } from 'swiper/modules';
 import { HeroesService } from '../../api/HeroesService';
+import { useEffect, useState } from 'react';
+import { Hero } from '../../interfaces/HeroInterface';
 import 'swiper/css';
 import 'swiper/css/grid';
 import 'swiper/css/pagination';
@@ -18,6 +20,19 @@ function getHeroes() {
 }
 
 export function CarouselPowersHeroes() {
+    // State to store the heroes
+    const [heroes, setHeroes] = useState<Hero[]>([]);
+
+    // UseEffect to fetch the heroes
+    useEffect(() => {
+        const fetchHeroes = async () => {
+            const fetchedHeroes = await getHeroes();
+            setHeroes(fetchedHeroes);
+        };
+
+        fetchHeroes();
+    }, []);
+
     return (
         <>
             <IonCard className="ion-padding card-carousel-powers-hero">
@@ -52,21 +67,18 @@ export function CarouselPowersHeroes() {
                     }}
                     modules={[Pagination]}
                 >
-                    {getHeroes().map((hero) => (
+                    {heroes && heroes.length > 0 && heroes.map((hero) => (
                         <SwiperSlide key={hero.id}>
-                            <IonCard className="slide-card-powers-heroes" style={
-                                {
-                                    backgroundImage: `url(${hero.images[0]})`,
-                                }
-                            }>
+                            <IonCard className="slide-card-powers-heroes" style={{ backgroundImage: `url(${hero.images[0]})` }}>
                                 <h1 className="ion-text-center ion-padding">{hero.name}</h1>
-                                <p>
-                                    {hero.powers.map((power) => (
-                                        <ul>
-                                            <li>{power}</li>
-                                        </ul>
-                                    ))}
-                                </p>
+                                <h2 className="ion-text-center">Powers</h2>
+                                {hero.power && hero.power.length > 0 && (
+                                    <ul>
+                                        {hero.power.map((power, index) => (
+                                            <li key={index}>{power}</li>
+                                        ))}
+                                    </ul>
+                                )}
                             </IonCard>
                         </SwiperSlide>
                     ))}

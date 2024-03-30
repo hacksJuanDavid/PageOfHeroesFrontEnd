@@ -1,5 +1,7 @@
 import { IonButton, IonCard, IonCardContent, IonCardHeader, IonCol, IonGrid, IonRow } from "@ionic/react";
 import { HeroesService } from "../../api/HeroesService";
+import { useEffect, useState } from "react";
+import { Hero } from "../../interfaces/HeroInterface";
 import "../../styles/DetailHero.css";
 
 // Function to get hero by id
@@ -8,7 +10,7 @@ function getHeroById() {
     const heroesService = new HeroesService();
 
     // Get id from the url
-    const id = Number(window.location.pathname.split("/").pop());
+    const id = String(window.location.pathname.split("/").pop());
 
     // Get the hero by id
     const hero = heroesService.getHeroById(id);
@@ -17,8 +19,18 @@ function getHeroById() {
 }
 
 export function DetailHero() {
-    // Get the hero
-    const hero = getHeroById();
+    // State to store the hero
+    const [hero, setHero] = useState({} as Hero);
+
+    // UseEffect to get the hero
+    useEffect(() => {
+        const fetchHero = async () => {
+            const fetchedHero = await getHeroById();
+            setHero(fetchedHero);
+        }
+
+        fetchHero();
+    }, []);
 
     return (
         <div>
@@ -26,7 +38,7 @@ export function DetailHero() {
                 <IonGrid>
                     <IonRow>
                         <IonCol size="12" sizeMd="6">
-                            <img className="img-card-detail-hero" alt={`${hero.name}`} src={hero.images[0]} />
+                            <img className="img-card-detail-hero" alt={`${hero.name}`} src={hero.images && hero.images.length > 0 ? hero.images[0] : ''} />
                         </IonCol>
                         <IonCol size="12" sizeMd="6">
                             <IonCardHeader>
@@ -37,15 +49,15 @@ export function DetailHero() {
                                 <p>{hero.history}</p>
                                 <h1>Powers</h1>
                                 <ul>
-                                    {hero.powers.map((power, index) => (
+                                    {hero.power && hero.power.map((power, index) => (
                                         <li key={index}>{power}</li>
                                     ))}
                                 </ul>
                                 <h1>Characteristics</h1>
                                 <ul>
-                                    <li>Gender: {hero.characteristics.gender}</li>
-                                    <li>Origin: {hero.characteristics.origin}</li>
-                                    <li>Universe: {hero.characteristics.universe}</li>
+                                    <li>Gender: {hero.characteristics && hero.characteristics.gender}</li>
+                                    <li>Origin: {hero.characteristics && hero.characteristics.origin}</li>
+                                    <li>Universe: {hero.characteristics && hero.characteristics.universe}</li>
                                 </ul>
                                 <IonCol>
                                     <div className="ion-text-left">

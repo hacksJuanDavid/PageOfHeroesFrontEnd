@@ -1,5 +1,7 @@
 import { IonButton, IonCard, IonCol, IonGrid, IonRow } from "@ionic/react";
 import { HeroesService } from "../../api/HeroesService";
+import { useEffect, useState } from "react";
+import { Hero } from "../../interfaces/HeroInterface";
 
 // Function to get hero by id
 function getHeroById() {
@@ -7,7 +9,7 @@ function getHeroById() {
     const heroesService = new HeroesService();
 
     // Get id from the url
-    const id = Number(window.location.pathname.split("/").pop());
+    const id = String(window.location.pathname.split("/").pop());
 
     // Get the hero by id
     const hero = heroesService.getHeroById(id);
@@ -16,9 +18,21 @@ function getHeroById() {
 }
 
 export function GalleryHero() {
-    // Get the hero
-    const hero = getHeroById();
+    // State to store the hero
+    const [hero, setHero] = useState<Hero>({} as Hero);
+    
+    // UseEffect to get the hero
+    useEffect(() => {
+        const fetchHero = async () => {
+            const fetchedHero = await getHeroById();
+            setHero(fetchedHero);
+        }
 
+        fetchHero();
+    }, []);
+
+    console.log(hero);
+    
     return (
         <div>
             <IonCard className="gallery-card">
@@ -29,7 +43,7 @@ export function GalleryHero() {
                         </IonCol>
                     </IonRow>
                     <IonRow>
-                        {hero.images.map((image, index) => (
+                        {hero.images && hero.images.map((image, index) => (
                             <IonCol size="6" sizeMd="3" key={index}>
                                 <div className="image-container">
                                     <img src={image} alt={`${hero.name} ${index + 1}`} />

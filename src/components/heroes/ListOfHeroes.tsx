@@ -1,6 +1,7 @@
 import { IonButton, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonCol, IonGrid, IonRow } from "@ionic/react";
 import { HeroesService } from "../../api/HeroesService";
 import { Hero } from "../../interfaces/HeroInterface";
+import { useEffect, useState } from "react";
 
 // Function to get all the heroes
 function getHeroes() {
@@ -13,8 +14,18 @@ function getHeroes() {
 }
 
 export function ListOfHeroes() {
-    // Get all the heroes
-    const heroes = getHeroes();
+    // State to store the heroes
+    const [heroes, setHeroes] = useState<Hero[]>([]);
+
+    // UseEffect to get the heroes
+    useEffect(() => {
+        const fetchHeroes = async () => {
+            const fetchedHeroes = await getHeroes();
+            setHeroes(fetchedHeroes);
+        }
+
+        fetchHeroes();
+    }, []);
 
     return (
         <IonGrid>
